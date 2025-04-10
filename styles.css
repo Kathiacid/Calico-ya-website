@@ -28,42 +28,53 @@ nav{
     margin-top:300px;
     font-family: "Reggae One", system-ui;
 }
-
-.titulo{
-    justify-items: center;
+.banner p{
+    font-family: "Murecho", sans-serif;
+    margin-bottom: 5px;
+}
+.titulo {
     font-family: "Reggae One", system-ui;
     font-size: 1.5rem;
     margin-top: 30px;
 }
-.nuestros_locales{
-    display: grid;
-    justify-content: center;
+
+.nuestros_locales {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
     margin-top: 20px;
-    justify-items: center;
-    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
     width: 80%;
-}
-.nuestros_locales p{
-    font-size: 16px;
-    justify-items: center;
+    margin-left: auto; 
+    margin-right: auto;;
 }
 
-
-
-body {
-
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-
+.nuestros_locales p {
+    font-size: 20px;
 }
 
-header {
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+#carousel {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.chef,.horario {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.chef img{
+    margin-left:10px;
 }
 
+.chef-text p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.hor-text p{
+    font-size: 20px;
+
+}
 
 ul{
     display: flex;
@@ -75,14 +86,87 @@ ul{
 img{
     border-radius: 8px;
 }
+.titulo{
+    margin-top: 60px;
+    justify-items: center;
+}
 
-h2{
+.precio{
+    font-family: "Reggae One", system-ui;
+
+}
+.hero{
+    margin-top: 60px;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.8)), url(./img/animes.jpg);
+    height: 600px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.hero h1{
     font-family: "Reggae One", system-ui;
 }
-p{
-    font-family: "Murecho", sans-serif;
-    margin-bottom: 5px;
+.como{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
 }
+
+.menu_tematico,.proyecciones,.Cosplay{
+    border-radius: 5%;
+}
+.menu_tematico img,.proyecciones img,.Cosplay img{
+    border-radius: 6%;
+}
+.menu_tematico h3,.proyecciones h3,.Cosplay h3{
+    font-family: "Reggae One", system-ui;
+}
+.menu_tematico{
+    border: 4px solid yellow;
+}
+.proyecciones{
+    border: 4px solid pink;    
+}
+.Cosplay{
+    border: 4px solid lightblue;
+}
+.calendario{
+    background-color: rgb(250, 243, 243);
+    width: 50%;
+    height:450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tabla{
+    width:40%;
+    background-color: rgb(203, 197, 197);
+}
+.bottom{
+    display:flex;
+    width: 100%;
+}
+.formulario{
+    background-color: rgb(250, 243, 243);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .contenido {
@@ -121,15 +205,6 @@ span{
 
     height: auto;
 
-}
-.titulo_sobrenosotros{
-    text-align: center;
-    margin-top: 20px;
-}
-.nosotros{
-    display: flex;
-    width:500px;
-    gap: 30px;
 }
 .contenedor_nosotros{
     display: flex;

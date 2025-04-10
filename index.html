@@ -42,7 +42,7 @@
     <main>
         <section class="banner" id="banner">
             <h1>Bienvenido a Calico ya</h1>
-            <p>Un viaje gastronómico a Japón, sin salir de Chile..</p>
+            <p>Un viaje gastronómico a Japón, sin salir de Chile.</p>
     
         </section>
         <div class="cortinas">
@@ -52,62 +52,67 @@
         <div class="nuestros_locales" id="nuestros_locales">
             <h2 id="sobrenosotros">Sobre nosotros</h2>
             <p>"Calico Ya" es un rincón japonés donde los sabores de Tokio se encuentran con la calidez de un hogar. Inspirado en los auténticos ramen-ya de Japón, nuestro local ofrece bowls de ramen artesanales —con caldos simmerados por horas, noodles al dente y toppings cuidadosamente seleccionados—, pero también un menú variado para quienes buscan explorar más allá. <br>ofrecemos un formato rápido y práctico, donde los clientes suelen comer y retirarse rápidamente, con una barra y pocos asientos, y el pedido se realiza mediante máquinas de tickets, donde se paga antes de comer.</p>
+            
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/chefs.jpg" class="d-block w-100" alt="Imagen de chefs">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/local.jpg" class="d-block w-100" alt="Imagen del local">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/barra.jpg" class="d-block w-100" alt="Imagen de la barra">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/chefs.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/local.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/barra.jpg" class="d-block w-100" alt="...">
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
         </div>
         <div class="tarjetas">
-            <div>
-                👨‍🍳 Especialidad del Chef<br>
-                Nuestro ramen tonkotsu es legendario: cocinado a fuego lento por más de 12 horas, con un sabor profundo y <br>auténtico que honra la tradición japonesa. ¡Una experiencia que no te puedes perder!
-                
-                </p>
+            <div class="chef">
+                <img src="./img/chef.jpg" alt="">
+                <div class="chef-text">
+                    <P>👨‍🍳 Especialidad del Chef<br>
+                    Nuestro ramen tonkotsu es legendario: cocinado a fuego lento por más de 12 horas, con un sabor profundo y <br>auténtico que honra la tradición japonesa. ¡Una experiencia que no te puedes perder!</P>
+                </div>
             </div>
-            <div>
-            <p>🕐 Horario de Atención
-                Lunes a Sábado: 12:00 PM – 10:30 PM<br>
-                Domingos: 1:00 PM – 9:00 PM<br>
-                
-                📍 Ubicaciones<br>
-                Santiago: ¡Visítanos en Av. Providencia 1234, Santiago!<br>
-                
-                Concepción: ¡Te esperamos en Av. Los Carrera 456, Concepción!<br>
-                
-                Valdivia: Disfruta de nuestros sabores en Calle Picarte 789, Valdivia.<br>
+            <div class="horario">
+                <div class="hor-text">
+                    <p>🕐 Horario de Atención
+                        Lunes a Sábado: 12:00 PM – 10:30 PM<br>
+                        Domingos: 1:00 PM – 9:00 PM<br>
+                        
+                        📍 Ubicaciones<br>
+                        Santiago: ¡Visítanos en Av. Providencia 1234, Santiago!<br>
+                        
+                        Concepción: ¡Te esperamos en Av. Los Carrera 456, Concepción!<br>
+                        
+                        Valdivia: Disfruta de nuestros sabores en Calle Picarte 789, Valdivia.<br>
+                    </div>
+                    <img src="./img/restauramt.jpg" alt="">
             </div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <footer>
-    <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="./img/facebook.png" alt="Facebook"width="30px"></a>
 
-    <a href="#"><img src="./img/gorjeo.png" alt="X"></a>
+    <a href="#"><img src="./img/gorjeo.png" alt="X" width="30px"></a>
 
-    <a href="#"><img src="./img/social.png" alt="Instagram"></a>
+    <a href="#"><img src="./img/social.png" alt="Instagram"width="30px"></a>
 
     Kathia Cid 
 </footer>
