@@ -36,10 +36,16 @@
     </header>
     <main>
         <section class="hero">
-            <h1>Noche de Ramen & Anime</h1>
-            <p>Cada viernes último del mes</p>
+            <div class="video-fondo">
+                <video autoplay muted loop playsinline>
+                <source src="./img/anime_vid.mp4" type="video/mp4"></video>
+            <div class="hero-text">
+                <h1>Noche de Ramen & Anime</h1>
+                <p>Cada viernes último del mes</p>
+                <a type="button" class="btn btn-secondary" href="#como">Saber más</a>
+            </div>
         </section>
-        <section class="como">
+        <section class="como" id="como">
             <div class="menu_tematico" style="width: 18rem;">
                 <img src="./img/huevo naruto.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -70,25 +76,53 @@
                             <th>Tema</th>
                             <th>Anime</th>
                             <th>Ramen Especial</th>
-                            </tr>
+                        </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td>28 May</td>
-                            <td>Noche Nostálgica</td>
-                            <td>Dragon Ball Z</td>
-                            <td>Ramen "Genkidama"</td>
+                                <td>28 May</td>
+                                <td>Noche Nostálgica</td>
+                                <td>Dragon Ball Z</td>
+                                <td>Ramen "Genkidama"</td>
                             </tr>
                             <tr>
-                            <td>25 Jun</td>
-                            <td>Clásicos 90s</td>
-                            <td>Evangelion</td>
-                            <td>Ramen "Ángel"</td>
+                                <td>25 Jun</td>
+                                <td>Clásicos 90s</td>
+                                <td>Evangelion</td>
+                                <td>Ramen "Ángel"</td>
+                            </tr>
+                            <tr>
+                                <td>30 Jul</td>
+                                <td>Aventura Épica</td>
+                                <td>One Piece</td>
+                                <td>Ramen "Gomu Gomu"</td>
+                            </tr>
+                            <tr>
+                                <td>27 Ago</td>
+                                <td>Noche de Misterio</td>
+                                <td>Death Note</td>
+                                <td>Ramen "Kira"</td>
+                            </tr>
+                            <tr>
+                                <td>24 Sep</td>
+                                <td>Mechas y Batallas</td>
+                                <td>Gundam</td>
+                                <td>Ramen "RX-78"</td>
+                            </tr>
+                            <tr>
+                                <td>29 Oct</td>
+                                <td>Especial Halloween</td>
+                                <td>Jujutsu Kaisen</td>
+                                <td>Ramen "Malición Suprema"</td>
+                            </tr>
+                            <tr>
+                                <td>26 Nov</td>
+                                <td>Noche Samurai</td>
+                                <td>Demon Slayer</td>
+                                <td>Ramen "Respiración Solar"</td>
                             </tr>
                         </tbody>
                         </table>
-                    </div>
-                    </table>
                 </section>
             <section class="formulario">
                 <div class="texto-form">
@@ -96,13 +130,13 @@
                     <span>En Calico ya cada tazon se prepara al momento. Evita esperas:</span>
                     <span>
                         <ul>
-                            <li>Mesas garantizadas</li>
-                            <li>Servicio prioritario</li>
-                            <li>¡Sorpresa de bienvenida!</li>
+                            <strong><li>Mesas garantizadas,</li>
+                            <li>Servicio prioritario,</li>
+                            <li>¡Sorpresa de bienvenida!</li></strong>
                         </ul>
                     </span>
                 </div>
-                <div class="formulario">
+                <div class="formulario-form" id="formulario-form">
                     <h2>Reserva tu mesa</h2>
                             <form>
                                 <input type="text" class="form-control" placeholder="Nombre completo" required>
@@ -115,7 +149,7 @@
                                 </select>
                                 <input type="datetime-local" class="form-control" required>
                                 <textarea class="form-control" rows="3" placeholder="Notas especiales (alergias, celebraciones...)"></textarea>
-                                <button type="submit" class="btn btn-danger w-100 py-2">
+                                <button type="submit" class="btn btn-dark w-100 py-2">
                                 <i class="bi bi-calendar-check me-2"></i> Confirmar reserva
                                 </button>
                     </form>
